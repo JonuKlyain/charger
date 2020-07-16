@@ -262,4 +262,13 @@ $('.spotsblock__bottom').slick({
       );
     // звездный рейтинг  ======================
 
+
+    $('.btn').on('click', function() {
+      $('.modal').addClass('active');
+      $('body').toggleClass('lock');
+  });
+
+  $('.modal__btn').on('click', function() {
+    $('.modal').removeClass('active');
+  })
 });
