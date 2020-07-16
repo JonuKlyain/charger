@@ -1,0 +1,516 @@
+.phoneblock
+    background-color: #f0f0f0
+    padding: 145px 0px 90px 0
+    @media (max-width: 767px)
+        padding: 25px 0px 0px 0px
+    &__body
+        @include flexbox
+        @media (max-width: 767px)
+            flex-direction: column
+
+    &__column
+        flex: 0 1 50%
+        @media (max-width: 767px)
+            flex: 0 1 100%
+    &__phones
+
+    &__description
+
+.phones-phoneblock
+    position: relative
+    @media (max-width: 767px)
+        overflow: hidden
+    &__body
+    &__img
+        position: absolute
+        @media (max-width: 767px)
+            position: relative
+        img
+            max-width: 100%
+        &_1
+            top: 35px
+            left: -105px
+            @media (max-width: 990px)
+                top: 0
+                left: 0
+                text-align: center
+            img
+                @media (max-width: 767px)
+                    transform: rotate(31.5deg)
+        &_2
+            top: -185px
+            left: 60px
+            z-index: 1
+            @media (max-width: 990px)
+                display: none
+
+.description-phoneblock
+    padding: 0px 0px 0px 90px
+    @media (max-width: 767px)
+        padding: 0px 0px 0px 0px
+    &__body
+        text-align: left
+    &__column
+        margin: 0px 0px 50px 0px
+    &__title
+        color: $main-color
+        font-size: 24px
+        font-weight: 400
+        padding: 17.5px 0px 17.5px 80px
+        margin: 0px 0px 10px 0px
+        background: url(../img/phoneblock/003.png) left no-repeat
+        &-two
+            background: url(../img/phoneblock/004.png) left no-repeat
+        @media (max-width: 440px)
+            font-size: 20px
+
+    &__text
+        font-size: 16px
+        line-height: 24px
+        font-weight: 500
+// ========================================================================
+
+.easyblock
+    padding: 48px 0px 0px 0px
+    @media (max-width: 767px)
+        padding: 20px 0px 0px 0px
+    &__bodu
+
+    &__top
+        text-align: center
+        margin: 0px 0px 44px 0px
+        @media (max-width: 767px)
+            margin: 0px 0px 0px 0px
+    &__icon
+        margin: 0px 0px 30px 0px
+        @media (max-width: 767px)
+            margin: 0px 0px 10px 0px
+    &__title
+        font-size: 24px
+        font-weight: 700
+        text-align: center
+        margin: 0px 0px 16px 0px
+    &__subtitle
+        color: $main-color
+        font-size: 36px
+        font-weight: 700
+    &__bottom
+        @include flexbox
+        margin: 0px -10px
+        @media (max-width: 767px)
+            flex-wrap: wrap
+            justify-content: center
+    &__column
+        flex: 0 1 33.333%
+        @include flexbox
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        text-align: center
+        padding: 0px 10px
+        @media (max-width: 767px)
+            flex: 0 1 100%
+            margin: 10px 0px 0px 0px
+            border-bottom: 2px solid $main-color
+            &:last-child
+                border-bottom: none
+    &__number
+        @include flexbox
+        justify-content: center
+        align-items: center
+        height: 56px
+        width: 56px
+        border: solid 1px $main-color
+        border-radius: 50%
+        font-size: 26px
+        color: $main-color
+        margin: 0px 0px 30px 0px
+        @media (max-width: 767px)
+            margin: 20px 0px 10px 0px
+    &__text
+        font-size: 24px
+        font-weight: 700
+        line-height: 32px
+        margin: 0px 0px 51px 0px
+        @media (max-width: 767px)
+            margin: 0px 0px 20px 0px
+    &__img
+        max-width: 100%
+        img
+            max-width: 100%
+// ========================================================================
+
+// ========================================================================
+
+.spotsblock
+    background-color: #000
+    padding: 75px 0px 95px 0px
+    text-align: center
+    @media (max-width: 767px)
+        padding: 30px 0px
+    &__top
+    &__title
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        margin: 0px 0px 16px 0px
+    &__subtitle
+        color: #3cd072
+        font-size: 36px
+        font-weight: 400
+        margin: 0px 0px 55px 0px
+        @media (max-width: 767px)
+            margin: 0px 0px 30px 0px
+            font-size: 30px
+    &__item
+        margin: 0px 5px
+// ========================================================================
+
+// ========================================================================
+
+.business
+    position: relative
+    padding: 65px 0px 0px 0px
+    @media (max-width: 990px)
+        padding: 0px 0px 0px 0px
+    &__bg
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    &__content
+        position: relative
+        z-index: 1
+        @include flexbox
+        justify-content: space-around
+        align-items: flex-end
+        @media (max-width: 767px)
+            flex-wrap: wrap
+    &__column
+        flex: 0 1 50%
+        @media (max-width: 767px)
+            flex: 0 1 100%
+    &__box
+        padding: 0px 0px 30px 0px
+        @media (max-width: 440px)
+            padding: 0px 0px 0px 0px
+    &__title    
+        color: #ffffff
+        font-size: 36px
+        font-weight: 400
+        padding: 30px 0px 36px 98px
+        background: url('../img/businessblock/002.png') left no-repeat
+        @media (max-width: 440px)
+            font-size: 30px
+            padding: 25px 0px 26px 98px
+
+    &__text
+        font-size: 16px
+        font-weight: 600
+        max-width: 450px
+        line-height: 24px
+        margin: 0px 0px 40px 0px
+        @media (max-width: 767px)
+            max-width: none
+        @media (max-width: 440px)
+            margin: 0px 0px 20px 0px
+    &__list
+    &__item
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        max-width: 380px    
+        padding: 18px 0px 28px 80px
+        background: url('../img/businessblock/003.png') left top no-repeat
+        @media (max-width: 767px)
+            max-width: none
+        @media (max-width: 440px)
+            padding: 18px 0px 28px 80px
+            font-size: 20px
+    &__boximg
+        position: absolute
+        @include flexbox
+        justify-content: start
+        align-items: flex-end
+        bottom: 0
+        right: -65px
+        @media (max-width: 1200px)
+            right: 50px
+    &__img
+        flex: 0 1 33.333%
+        padding: 0px 9px
+        @media (max-width: 1200px)
+            &:nth-child(3)
+                display: none   
+        @media (max-width: 990px)
+            &:nth-child(1)
+                display: none   
+        @media (max-width: 767px)
+            &:nth-child(2)
+                display: none   
+// ========================================================================
+
+// ========================================================================
+.release
+    background-color: #f0f0f0
+    padding: 50px 0px
+    &_b
+        background-color: #000
+    @media (max-width: 767px)
+        padding: 20px 0px
+.form-release
+    @include flexbox
+    justify-content: space-between
+    align-items: flex-end
+    @media (max-width: 767px)
+        flex-direction: column
+        align-items: start
+
+    &__label
+        font-size: 24px
+        font-weight: 400
+        margin: 0px 0px 10px 0px
+        @media (max-width: 440px)
+            font-size: 20px
+        &_b
+            color: $main-color
+    &__input
+        width: 100%
+        @media (max-width: 767px)
+            max-width: 300px
+    &__button
+        min-width: 216px
+        margin: 0px 0px 0px 25px
+        @media (max-width: 767px)
+            margin: 10px 0px 0px 0px
+.input_b
+    display: block
+    border: 2px solid $main-color
+    color: #000
+    &::placeholder
+        color: $main-color
+    &__btn
+.input_g
+    color: $main-color
+    background-color: #fff
+    border: none
+    &::placeholder
+        // color: #
+.btn_b
+    // padding: 0px 50px
+    font-size: 16px
+    line-height: 24px
+    width: 100%
+    background-color: #000
+.btn_g
+    background-color: $main-color
+    color: #fff
+    &:hover
+        background-color: lighten($main-color, 10%)
+// ========================================================================
+
+// ========================================================================
+.clock  
+    padding: 70px 0px
+    @media (max-width: 767px)
+        padding: 30px 0px
+    &__box
+        @include flexbox
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    &__description
+        text-align: center
+        font-size: 16px
+        font-weight: 600
+        line-height: 24px
+        max-width: 650px
+        padding: 40px 0px 60px 0
+        @media (max-width: 767px)
+            padding: 20px 0px 30px 0
+    &__img
+        max-width: 100%
+        img
+            max-width: 100%
+.btn_clock
+    width: 296px
+    margin: 80px 0px 0px 0px
+    @media (max-width: 767px)
+        margin: 40px 0px 0px 0px
+// ========================================================================
+// ========================================================================
+.users
+    padding: 90px 0px
+    @media (max-width: 990px)
+        padding: 40px 0px
+    @media (max-width: 767px)
+        padding: 20px 0px
+    &__title
+        color: $main-color
+        font-size: 36px
+        font-weight: 600
+        margin: 0px 0px 15px 0px
+    &__content
+
+    &__item
+
+.item-users
+    @include flexbox
+    justify-content: flex-start
+    align-items: center
+    border-top: 1px solid #adadad
+    padding: 24px 0px
+    &:last-child
+        border-bottom: 1px solid #adadad
+    @media (max-width: 990px)
+        flex-wrap: wrap
+    @media (max-width: 767px)
+        flex-direction: column
+        align-items: start
+    &__img
+        @include flexbox
+        justify-content: space-between
+        width: 215px
+    &__description
+        margin: 0px 0px 0px 23px
+        width: 280px
+        @media (max-width: 767px)
+            margin: 30px 0px 0px 0px
+    &__name
+        color: $main-color
+        font-size: 32px
+        font-weight: 600
+    &__text
+        font-size: 24px
+        font-weight: 300
+        margin: 9px 0px
+    &__rating
+        @include flexbox
+        align-items: flex-end
+    &__star
+
+    &__stats
+        color: #b3b3b3
+        font-size: 16px
+        font-weight: 300
+        margin: 0px 0px 3px 15px
+    &__info
+        margin: 0px 0px -10px 80px
+        @include flexbox
+        flex-direction: column
+        @media (max-width: 990px)
+            margin: 30px 0px 0px 0px
+    &__title
+        font-size: 24px
+        font-weight: 300
+        margin: 0px 0px 20px 0px
+        @media (max-width: 990px)
+            margin: 0px 0px 0px 0px
+    &__figures
+        padding: 0px 0px 0px 65px
+        font-size: 68px
+        font-weight: 300
+        background: url(../img/users/011.png) left no-repeat
+        @media (max-width: 767px)
+            font-size: 50px
+        
+.star
+    @include flexinline
+    flex-direction: row-reverse
+    &__item
+        font-size: 30px
+        color: #b3b3b3
+        cursor: pointer
+        transition: .2s
+        &:hover, 
+        &:hover ~ .star__item
+            color: #989898
+.star[data-total-value="1"] .star__item:nth-child(n + 5),
+.star[data-total-value="2"] .star__item:nth-child(n + 4),
+.star[data-total-value="3"] .star__item:nth-child(n + 3),
+.star[data-total-value="4"] .star__item:nth-child(n + 2),
+.star[data-total-value="5"] .star__item:nth-child(n + 1)
+    color: $main-color
+// ========================================================================
+
+// ========================================================================
+.contact
+    position: relative
+    padding: 90px 0px 70px 0
+    @media (max-width: 767px)
+        padding: 20px 0px 20px 0
+    @media (max-width: 440px)
+        padding: 20px 0px 0px 0px
+    &__img
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+    &__content
+        position: relative
+        z-index: 2
+        @include flexbox
+        @media (max-width: 767px)
+            flex-direction: column
+            align-items: start
+    &__column
+        flex: 0 1 50%
+    &__form
+
+    &__social
+
+.form-contact
+    max-width: 455px
+    &__title
+        font-size: 36px
+        font-weight: 600
+        margin: 0px 0px 23px 0px    
+        @media (max-width: 440px)
+            font-size: 30px
+    &__input
+        margin: 0px 0px 24px 0px
+        background-color: #fff
+        color: $main-color
+        &::placeholder  
+            color: $main-color
+        @media (max-width: 440px)
+            margin: 0px 0px 10px 0px
+            &.input
+                &_text  
+                    height: 150px
+    &__btn
+        background-color: #000000
+        color: #fff
+        font-weight: 300
+        width: 216px
+
+.social-contact
+    margin: 0px 0px 0px 100px
+    @media (max-width: 767px)
+        margin: 30px 0px 0px 0px
+    &__title
+        font-size: 36px
+        font-weight: 600
+        margin: 0px 0px 15px 0px
+        @media (max-width: 440px)
+            font-size: 30px
+    &__link
+        @include flexbox
+        padding: 15px 0px 15px 70px
+        margin: 0px 0px 20px 0px
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        &_1
+            background: url(../img/contact/001.png) left no-repeat
+        &_2
+            background: url(../img/contact/002.png) left no-repeat
+        &_3
+            background: url(../img/contact/003.png) left no-repeat
+
+
+
+// ========================================================================
+
